@@ -177,6 +177,238 @@ font-family: Tahoma, Geneva, sans-serif;
 }
 
 
+/*facts start*/
+
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.row.nopaddingleftright {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.smoothie {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a, a:hover {
+    color: #F64747;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* 2 - HOVER EFFECT
+/*-----------------------------------------------------------------------------------*/
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+.hover-effect .img-responsive {
+    width: 100%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    backface-visibility: hidden;
+}
+.hover-effect:hover .img-responsive {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    backface-visibility: hidden;
+}
+.hover-effect .hover-caption, .hover-effect .hover-overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    opacity: 0;
+    padding: 0 20px;
+}
+.hover-effect .hover-caption {
+    top: 15px;
+    text-align: left;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hover-effect:hover .hover-caption {
+    opacity: 1;
+    z-index: 5;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.hover-effect .hover-overlay {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+    opacity: 1;
+    color: #fff;
+}
+.hover-effect .hover-caption {
+    background-color: rgba(0,0,0,0.6);
+    color: #222;
+}
+.hover-effect .hover-caption.transparent {
+    background-color: transparent;
+}
+.hover-effect .hover-caption, .hover-effect .hover-caption p small {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.hover-effect:hover .hover-overlay {
+    opacity: 0;
+    top: 100px;
+}
+.hover-effect h4 {
+    letter-spacing: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    width: calc(100% - 20px);
+}
+.vertical-align-bottom {
+    bottom: 0px;
+    position: absolute;
+}
+.vertical-align-top {
+    position: absolute;
+    top: 15px;
+}
+.item-category-span {
+    clear: left;
+    background-color: #767676;
+    color: #fff;
+    padding: 1px 7px 0;
+    display: block;
+    float: left;
+    margin: 10px 0 20px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.dark-overlay {
+    background-color: rgba(0,0,0,0.6);
+}
+.accent-overlay {
+    background-color: rgba(219, 10, 91,0.9);
+}
+.dark-overlay.green-overlay {
+    background-color: rgba(27, 163, 156,0.9);
+}
+.dark-overlay.half-opacity {
+    background-color: rgba(219, 10, 91,0.4);
+}
+.dark-overlay.fill-right:after {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    left: 100%;
+}
+.dark-overlay.fill-left:after {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    right: 100%;
+}
+.dark-overlay.green-overlay.fill-right:after, .dark-overlay.green-overlay.fill-left:after {
+    background-color: rgba(27, 163, 156,0.9);
+}
+.hover-shift .dark-overlay.fill-left {
+    position: relative;
+    left: 0px;
+}
+.hover-shift .dark-overlay.fill-right {
+    position: relative;
+    right: 0px;
+}
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+.match-height {
+    position: relative;
+    min-height: 140px;
+}
+.white-wrapper {
+    background-color: #fff;
+}
+.section-inner {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.section-inner-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.section-sub-title {
+    /*font-family: 'Reenie Beanie', serif;*/
+    font-size: 20px;
+    /*text-transform: lowercase;*/
+    letter-spacing: 1px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/*facts end*/
+
+
 
 
 /*<div class="search-container">
