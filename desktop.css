@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 * {box-sizing: border-box;}
 
@@ -454,3 +455,276 @@ footer{
 }
 
 
+=======
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding-top: 100px;
+    padding-left:0;
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*hidden search box in the navigation bar*/
+.hide
+{
+    opacity: 0;
+    max-height: 0;
+}
+
+#trigger {
+    position: absolute;
+    left: -999em;
+}
+
+
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+/*#home-h1{*/
+/*    font-size: small;*/
+/*}*/
+/*.container{*/
+/*    max-width: 100% !important;*/
+/*}*/
+
+
+/*#container input[type="checkbox"]:checked + div*/
+/*!*#container input[type="checkbox"]:checked *!*/
+/*{*/
+/*    max-height: 99em;*/
+/*    opacity: 1;*/
+/*    height: auto;*/
+/*    overflow: hidden;*/
+/*}*/
+/***********************************************/
+/**************** toggle search bar ******************/
+.search-form-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+    margin-top: 120px;
+    background:  right center no-repeat #42adf5;
+}
+.search-form-wrapper.open {
+    display:block;
+    position: absolute;
+}
+/**************************************************/
+
+/** pseudo elements are used to underline the links for the desktop size screens**/
+@media all and (min-width: 992px) {
+    .nav-link.active:after{
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        max-width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 3px solid #0077C8; /* This creates the border. Replace black with whatever color you want. */
+
+
+    }
+
+    .nav-link:after{
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        max-width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 3px solid grey; /* This creates the border. Replace black with whatever color you want. */
+
+    }
+
+
+    .nav-link:hover:after {
+
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        max-width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 3px solid #3293a8; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    /*logo for the desktop with container*/
+    /*    .container> .navbar-brand{*/
+
+    /*        margin:auto 0;*/
+    /*        background-color: #3e3f40;*/
+    /*        padding: 20px;*/
+    /*        font-weight: bold;*/
+    /*    }*/
+
+    /*    .container>.navbar-light{*/
+    /*        color: rgba(0, 0, 0, 0.9);*/
+
+    /*    }*/
+
+    /*    .navbar-nav > li{*/
+    /*        margin-left:100px;*/
+    /*        margin-right:100px;*/
+    /*    }*/
+
+    /* .logo1 {*/
+    /*        display: block;*/
+    /*        color: white;*/
+    /*    }*/
+
+    /*.logo1:before {*/
+    /*    //content: attr(data-text);*/
+    /*    color: white;*/
+    /*    // background: black;*/
+    /*        padding: 1px 8px;*/
+    /*    }*/
+
+    /*.logo2{*/
+    /*        color:white;*/
+    /*    }*/
+
+    /*logo for the desktop with navbar*/
+    .navbar> .navbar-brand{
+
+        margin:auto 0;
+        background-color: #373737;
+        padding: 20px;
+        font-weight: bold;
+       max-height: 239px;
+       max-width: 260px;
+      //  font-size: 3em;
+    }
+
+    .navbar>.navbar-light{
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+
+    .navbar-nav > li{
+        margin-left:100px;
+        margin-right:100px;
+    }
+
+    .logo1 {
+        display: block;
+        color: white;
+      //  margin-top: 20px;
+        margin-bottom: 0;
+      //  justify-content: center;
+       // line-height: 10px;
+    }
+
+    .logo1:before {
+    //content: attr(data-text);
+        color: white;
+    // background: black;
+        padding: 0;
+       // line-height: 0;
+
+    }
+
+    .logo2{
+        color:white;
+        justify-content: center;
+        margin:0 auto;
+       // letter-spacing: 2px;
+       // line-height: 0;
+    }
+
+    .search-form-wrapper {
+        margin-top: 20px;
+    }
+    /*** remove the padding and margin from the logo in the navbar*/
+    .navbar {
+        padding-left: 0 !important;
+        margin-left:0 !important;
+        margin-top:0 !important;
+        padding-top:0 !important;
+        margin-bottom:0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    #home-img{
+        max-height: 496px;
+        max-width: 740px;
+    }
+}
+
+
+
+.navbar{
+    background-color: #FCFCFC;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+
+
+/*<div class="search-container">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" <i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        */
+
+
+/* Style all font awesome icons */
+.list-inline-item>.fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.list-inline-item>.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.list-inline-item>.fa-facebook {
+   /*background: #3B5998; */
+    color: #3B5998;
+}
+
+/* Twitter */
+.list-inline-item>.fa-twitter {
+   /* background: #55ACEE; */
+    color: #55ACEE;
+}
+
+footer{
+    background-color: white;
+}
+
+@media (min-width: 1200px) {
+    .nav-collapse.collapse {
+        height: auto !important;
+        overflow: visible !important;
+    }
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+>>>>>>> Stashed changes
