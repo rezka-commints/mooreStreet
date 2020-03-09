@@ -1,0 +1,914 @@
+ HEAD,
+ * {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding-top: 90px;
+    padding-left:0;
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*hidden search box in the navigation bar*/
+.hide
+{
+    opacity: 0;
+    max-height: 0;
+}
+
+#trigger {
+    position: absolute;
+    left: -999em;
+}
+
+/*.container{*/
+/*    max-width: 100% !important;*/
+/*}*/
+
+
+/*#container input[type="checkbox"]:checked + div*/
+/*!*#container input[type="checkbox"]:checked *!*/
+/*{*/
+/*    max-height: 99em;*/
+/*    opacity: 1;*/
+/*    height: auto;*/
+/*    overflow: hidden;*/
+/*}*/
+/***********************************************/
+/**************** toggle search bar ******************/
+.search-form-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+    margin-top: 120px;
+    background:  right center no-repeat #42adf5;
+}
+.search-form-wrapper.open {
+    display:block;
+    position: absolute;
+}
+/**************************************************/
+
+/** pseudo elements are used to underline the links for the desktop size screens**/
+@media all and (min-width: 992px) {
+    .nav-link.active:after{
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #0f6674; /* This creates the border. Replace black with whatever color you want. */
+
+
+    }
+
+    .nav-link:after{
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid grey; /* This creates the border. Replace black with whatever color you want. */
+
+    }
+
+
+    .nav-link:hover:after {
+
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #3293a8; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    /*logo for the desktop with container*/
+    /*    .container> .navbar-brand{*/
+
+    /*        margin:auto 0;*/
+    /*        background-color: #3e3f40;*/
+    /*        padding: 20px;*/
+    /*        font-weight: bold;*/
+    /*    }*/
+
+    /*    .container>.navbar-light{*/
+    /*        color: rgba(0, 0, 0, 0.9);*/
+
+    /*    }*/
+
+    /*    .navbar-nav > li{*/
+    /*        margin-left:100px;*/
+    /*        margin-right:100px;*/
+    /*    }*/
+
+    /* .logo1 {*/
+    /*        display: block;*/
+    /*        color: white;*/
+    /*    }*/
+
+    /*.logo1:before {*/
+    /*    //content: attr(data-text);*/
+    /*    color: white;*/
+    /*    // background: black;*/
+    /*        padding: 1px 8px;*/
+    /*    }*/
+
+    /*.logo2{*/
+    /*        color:white;*/
+    /*    }*/
+
+    /*logo for the desktop with navbar*/
+    .navbar> .navbar-brand{
+
+        margin:auto 0;
+        background-color: #3e3f40;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .navbar>.navbar-light{
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+
+    .navbar-nav > li{
+        margin-left:100px;
+        margin-right:100px;
+    }
+
+    .logo1 {
+        display: block;
+        color: white;
+    }
+
+    .logo1:before {
+    //content: attr(data-text);
+        color: white;
+    // background: black;
+        padding: 1px 8px;
+    }
+
+    .logo2{
+        color:white;
+    }
+
+    .search-form-wrapper {
+        margin-top: 20px;
+    }
+    /*** remove the padding and margin from the logo in the navbar*/
+    .navbar {
+        padding-left: 0 !important;
+        margin-left:0 !important;
+        margin-top:0 !important;
+        padding-top:0 !important;
+        margin-bottom:0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.navbar{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+/*facts start*/
+
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.row.nopaddingleftright {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.smoothie {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a, a:hover {
+    color: #F64747;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* 2 - HOVER EFFECT
+/*-----------------------------------------------------------------------------------*/
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+.hover-effect .img-responsive {
+    width: 100%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    backface-visibility: hidden;
+}
+.hover-effect:hover .img-responsive {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    backface-visibility: hidden;
+}
+.hover-effect .hover-caption, .hover-effect .hover-overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    opacity: 0;
+    padding: 0 20px;
+}
+.hover-effect .hover-caption {
+    top: 15px;
+    text-align: left;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hover-effect:hover .hover-caption {
+    opacity: 1;
+    z-index: 5;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.hover-effect .hover-overlay {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+    opacity: 1;
+    color: #fff;
+}
+.hover-effect .hover-caption {
+    background-color: rgba(0,0,0,0.6);
+    color: #222;
+}
+.hover-effect .hover-caption.transparent {
+    background-color: transparent;
+}
+.hover-effect .hover-caption, .hover-effect .hover-caption p small {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.hover-effect:hover .hover-overlay {
+    opacity: 0;
+    top: 100px;
+}
+.hover-effect h4 {
+    letter-spacing: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    width: calc(100% - 20px);
+}
+.vertical-align-bottom {
+    bottom: 0px;
+    position: absolute;
+}
+.vertical-align-top {
+    position: absolute;
+    top: 15px;
+}
+.item-category-span {
+    clear: left;
+    background-color: #767676;
+    color: #fff;
+    padding: 1px 7px 0;
+    display: block;
+    float: left;
+    margin: 10px 0 20px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.dark-overlay {
+    background-color: rgba(0,0,0,0.6);
+}
+.accent-overlay {
+    background-color: rgba(219, 10, 91,0.9);
+}
+.dark-overlay.green-overlay {
+    background-color: rgba(27, 163, 156,0.9);
+}
+.dark-overlay.half-opacity {
+    background-color: rgba(219, 10, 91,0.4);
+}
+.dark-overlay.fill-right:after {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    left: 100%;
+}
+.dark-overlay.fill-left:after {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    right: 100%;
+}
+.dark-overlay.green-overlay.fill-right:after, .dark-overlay.green-overlay.fill-left:after {
+    background-color: rgba(27, 163, 156,0.9);
+}
+.hover-shift .dark-overlay.fill-left {
+    position: relative;
+    left: 0px;
+}
+.hover-shift .dark-overlay.fill-right {
+    position: relative;
+    right: 0px;
+}
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+.match-height {
+    position: relative;
+    min-height: 140px;
+}
+.white-wrapper {
+    background-color: #fff;
+}
+.section-inner {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.section-inner-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.section-sub-title {
+    /*font-family: 'Reenie Beanie', serif;*/
+    font-size: 20px;
+    /*text-transform: lowercase;*/
+    letter-spacing: 1px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/*facts end*/
+
+
+
+
+/*<div class="search-container">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" <i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        */
+
+
+/* Style all font awesome icons */
+.list-inline-item>.fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.list-inline-item>.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.list-inline-item>.fa-facebook {
+   /*background: #3B5998; */
+    color: #3B5998;
+}
+
+/* Twitter */
+.list-inline-item>.fa-twitter {
+   /* background: #55ACEE; */
+    color: #55ACEE;
+}
+
+footer{
+    background-color: white;
+}
+
+
+/*=======*/
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding-top: 90px;
+    padding-left:0;
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*hidden search box in the navigation bar*/
+.hide
+{
+    opacity: 0;
+    max-height: 0;
+}
+
+#trigger {
+    position: absolute;
+    left: -999em;
+}
+
+/*.container{*/
+/*    max-width: 100% !important;*/
+/*}*/
+
+
+/*#container input[type="checkbox"]:checked + div*/
+/*!*#container input[type="checkbox"]:checked *!*/
+/*{*/
+/*    max-height: 99em;*/
+/*    opacity: 1;*/
+/*    height: auto;*/
+/*    overflow: hidden;*/
+/*}*/
+/***********************************************/
+/**************** toggle search bar ******************/
+.search-form-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+    margin-top: 120px;
+    background:  right center no-repeat #42adf5;
+}
+.search-form-wrapper.open {
+    display:block;
+    position: absolute;
+}
+/**************************************************/
+
+/** pseudo elements are used to underline the links for the desktop size screens**/
+@media all and (min-width: 992px) {
+    .nav-link.active:after{
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #0f6674; /* This creates the border. Replace black with whatever color you want. */
+
+
+    }
+
+    .nav-link:after{
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid grey; /* This creates the border. Replace black with whatever color you want. */
+
+    }
+
+
+    .nav-link:hover:after {
+
+        content: ""; /* This is necessary for the pseudo element to work. */
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50px; /* Change this to whatever width you want. */
+        padding-top: 10px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid #3293a8; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    /*logo for the desktop with container*/
+    /*    .container> .navbar-brand{*/
+
+    /*        margin:auto 0;*/
+    /*        background-color: #3e3f40;*/
+    /*        padding: 20px;*/
+    /*        font-weight: bold;*/
+    /*    }*/
+
+    /*    .container>.navbar-light{*/
+    /*        color: rgba(0, 0, 0, 0.9);*/
+
+    /*    }*/
+
+    /*    .navbar-nav > li{*/
+    /*        margin-left:100px;*/
+    /*        margin-right:100px;*/
+    /*    }*/
+
+    /* .logo1 {*/
+    /*        display: block;*/
+    /*        color: white;*/
+    /*    }*/
+
+    /*.logo1:before {*/
+    /*    //content: attr(data-text);*/
+    /*    color: white;*/
+    /*    // background: black;*/
+    /*        padding: 1px 8px;*/
+    /*    }*/
+
+    /*.logo2{*/
+    /*        color:white;*/
+    /*    }*/
+
+    /*logo for the desktop with navbar*/
+    .navbar> .navbar-brand{
+
+        margin:auto 0;
+        background-color: #3e3f40;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .navbar>.navbar-light{
+        color: rgba(0, 0, 0, 0.9);
+
+    }
+
+    .navbar-nav > li{
+        margin-left:100px;
+        margin-right:100px;
+    }
+
+    .logo1 {
+        display: block;
+        color: white;
+    }
+
+    .logo1:before {
+    //content: attr(data-text);
+        color: white;
+    // background: black;
+        padding: 1px 8px;
+    }
+
+    .logo2{
+        color:white;
+    }
+
+    .search-form-wrapper {
+        margin-top: 20px;
+    }
+    /*** remove the padding and margin from the logo in the navbar*/
+    .navbar {
+        padding-left: 0 !important;
+        margin-left:0 !important;
+        margin-top:0 !important;
+        padding-top:0 !important;
+        margin-bottom:0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+.navbar{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+/*facts start*/
+
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.row.nopaddingleftright {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.smoothie {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a, a:hover {
+    color: #F64747;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/* 2 - HOVER EFFECT
+/*-----------------------------------------------------------------------------------*/
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+.hover-effect .img-responsive {
+    width: 100%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    backface-visibility: hidden;
+}
+.hover-effect:hover .img-responsive {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    backface-visibility: hidden;
+}
+.hover-effect .hover-caption, .hover-effect .hover-overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    opacity: 0;
+    padding: 0 20px;
+}
+.hover-effect .hover-caption {
+    top: 15px;
+    text-align: left;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hover-effect:hover .hover-caption {
+    opacity: 1;
+    z-index: 5;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.hover-effect .hover-overlay {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+    opacity: 1;
+    color: #fff;
+}
+.hover-effect .hover-caption {
+    background-color: rgba(0,0,0,0.6);
+    color: #222;
+}
+.hover-effect .hover-caption.transparent {
+    background-color: transparent;
+}
+.hover-effect .hover-caption, .hover-effect .hover-caption p small {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.hover-effect:hover .hover-overlay {
+    opacity: 0;
+    top: 100px;
+}
+.hover-effect h4 {
+    letter-spacing: 5px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    width: calc(100% - 20px);
+}
+.vertical-align-bottom {
+    bottom: 0px;
+    position: absolute;
+}
+.vertical-align-top {
+    position: absolute;
+    top: 15px;
+}
+.item-category-span {
+    clear: left;
+    background-color: #767676;
+    color: #fff;
+    padding: 1px 7px 0;
+    display: block;
+    float: left;
+    margin: 10px 0 20px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.dark-overlay {
+    background-color: rgba(0,0,0,0.6);
+}
+.accent-overlay {
+    background-color: rgba(219, 10, 91,0.9);
+}
+.dark-overlay.green-overlay {
+    background-color: rgba(27, 163, 156,0.9);
+}
+.dark-overlay.half-opacity {
+    background-color: rgba(219, 10, 91,0.4);
+}
+.dark-overlay.fill-right:after {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    left: 100%;
+}
+.dark-overlay.fill-left:after {
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    width: 500%;
+    height: 100%;
+    right: 100%;
+}
+.dark-overlay.green-overlay.fill-right:after, .dark-overlay.green-overlay.fill-left:after {
+    background-color: rgba(27, 163, 156,0.9);
+}
+.hover-shift .dark-overlay.fill-left {
+    position: relative;
+    left: 0px;
+}
+.hover-shift .dark-overlay.fill-right {
+    position: relative;
+    right: 0px;
+}
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1190px;
+    }
+}
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+.match-height {
+    position: relative;
+    min-height: 140px;
+}
+.white-wrapper {
+    background-color: #fff;
+}
+.section-inner {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.section-inner-60 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-title {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 28px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.section-sub-title {
+    /*font-family: 'Reenie Beanie', serif;*/
+    font-size: 20px;
+    /*text-transform: lowercase;*/
+    letter-spacing: 1px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/*facts end*/
+
+
+
+
+/*<div class="search-container">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" <i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        */
+
+
+/* Style all font awesome icons */
+.list-inline-item>.fa {
+    padding: 10px;
+    font-size: 40px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.list-inline-item>.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.list-inline-item>.fa-facebook {
+   /*background: #3B5998; */
+    color: #3B5998;
+}
+
+/* Twitter */
+.list-inline-item>.fa-twitter {
+   /* background: #55ACEE; */
+    color: #55ACEE;
+}
+
+footer{
+    background-color: white;
+}
+
+
+>>>>>>> dc6eef6bf590c7b48f7eb69ae0f4c5e64ee11291
