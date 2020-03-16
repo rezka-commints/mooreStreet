@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+ Updated upstream
 
 * {box-sizing: border-box;}
 
@@ -47,7 +47,7 @@ font-family: Tahoma, Geneva, sans-serif;
 }
 .search-form-wrapper.open {
     display:block;
-    position: absolute;
+  //  position: absolute;
 }
 /**************************************************/
 
@@ -455,7 +455,6 @@ footer{
 }
 
 
-=======
 
 * {box-sizing: border-box;}
 
@@ -514,7 +513,7 @@ font-family: Tahoma, Geneva, sans-serif;
 }
 .search-form-wrapper.open {
     display:block;
-    position: absolute;
+   // position: absolute;
 }
 /**************************************************/
 
