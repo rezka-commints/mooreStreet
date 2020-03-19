@@ -6,8 +6,6 @@ body {
 
 }
 
-
-
 /*hidden search box in the navigation bar*/
 .hide
 {
@@ -285,16 +283,25 @@ body {
 
 }
 
-.row.display-flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-.row.display-flex > [class*='col-'] {
-    display: flex;
-    flex-direction: column;
 
-}
 
 /*#home{*/
 /*    background-color: #F0F0F5;*/
 /*}*/
+
+
+
+footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #3293a8;
+}
+footer  img {
+    margin-right: 15px;
+    margin-top: 20px;
+
+}
