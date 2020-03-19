@@ -176,6 +176,20 @@ font-family: Tahoma, Geneva, sans-serif;
 
 }
 
+ footer a {
+     text-decoration: none;
+     color: grey;
+ }
+
+ footer a:hover {
+     text-decoration: none;
+     color: #3293a8;
+ }
+ footer  img {
+     margin-right: 15px;
+     margin-top: 20px;
+
+ }
 
 /*facts start*/
 
