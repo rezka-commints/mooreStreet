@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>1916 Rising</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="desktop.css">
+    <!--    <link rel="stylesheet"-->
+    <!--          type="text/css"-->
+    <!--          href="homeCSS.css">-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         .row,.card-body,.col-sm-6{
             margin:0;
             padding: 0;
         }
         .container-fluid{
-            margin-top:20%;
+            margin-top:10%;
         }
         @media all and (max-width: 1920px) and (min-width: 1061px)  {
             p{
@@ -25,7 +36,7 @@
         }
 
         @media all and (max-width: 1060px) and (min-width: 700px) {
-            /* CSS goes here */
+
             p{
                 margin-left:10%;
                 margin-top:38%;
@@ -33,7 +44,7 @@
             }
         }
         @media all and (max-width: 699px) and (min-width: 576px) {
-            /* CSS goes here */
+
             p{
                 margin-left:10%;
                 margin-top:23%;
@@ -54,8 +65,43 @@
         }
     </style>
 </head>
-<body>
 
+<body class="1916risingPage">
+<!--/*START NAVIGATION BAR*/-->
+<nav class="navbar fixed-top navbar-expand-lg  navbar-light">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="home.html"><span class="logo1">MOORE </span><span class="logo2">STREET</span> </a>
+
+    <div class="navbar-collapse collapse w-100 justify-content-center" id="navbarSupportedContent">
+
+
+        <ul class="navbar-nav mx-auto" >
+            <li class="nav-item  px-3 ml-1" >
+                <a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i> Home <span style="visibility: hidden"> "  "</span></a>
+            </li>
+            <li class="nav-item  px-3 ml-1" >
+                <a class="nav-link " href="1916%20Rising.html"> <i class="fa fa-fw fa-file"></i> 1916 Rising <span style="visibility: hidden"> "  "</span></a>
+            </li>
+            <li class="nav-item px-3 ml-1" >
+                <a class="nav-link" href="gallery.html"><i class="fa fa-fw fa-camera"></i> Past and Present Gallery <span style="visibility: hidden"> "  "</span></a>
+            </li>
+
+            <li class="nav-item px-3 ml-1" >
+                <a class="nav-link" href="facts.html"><i class="fa fa-fw fa-file"></i> Related Facts<span style="visibility: hidden"> "  "</span> </a>
+            </li>
+        </ul>
+        <div class="hidden-xs navbar-form navbar-right">
+            <a href="#search" class="search-form-tigger btn "  data-toggle="search-form"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+
+</nav>
+
+<!-- body contents -->
 <div class="container-fluid">
     <div class="card" style="background-color:#f0f0f5;max-width: 70%;margin: auto" >
         <div class="card-body rounded">
@@ -64,7 +110,7 @@
                     <img src="images/1916rising-1.jpeg" class="img-fluid" alt="Responsive image1">
                 </div>
                 <div class="col-sm-6">
-                      <p>Pearse and Nurse O’Farrell deliver the unconditional </br>
+                    <p>Pearse and Nurse O’Farrell deliver the unconditional </br>
                         surrender to the British on Parnell Street.</p>
                 </div>
             </div>
@@ -104,6 +150,94 @@
     </div>
 
 </div>
+<br/><br/><br/><br/><br/>
 
+<!-- Footer -->
+
+
+<footer>
+    <hr class="w-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="accordion d-lg-flex w-100" id="accordion">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footerLinks">
+                                <a href="#one"
+                                   class="h6 p-0 d-block d-lg-none d-xl-none"
+                                   data-toggle="collapse">
+                                    One
+                                </a>
+                            </div>
+                            <div class="h5 d-none d-lg-block d-xl-block">
+                                One
+                            </div>
+                            <div class="collapse d-lg-flex" id="one" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-lg-none">
+                        <div class="col-lg-4 col-md-12">
+
+                            <a href="#two"
+                               class="h6 p-0 d-block d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                Two
+                            </a>
+                            <div class="h5 d-none d-lg-block d-xl-block">
+                                Two
+                            </div>
+                            <div class="collapse d-lg-flex" id="two" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-lg-none">
+                        <div class="col-lg-4 col-md-12">
+
+                            <a href="#three"
+                               class="h6 p-0 d-block d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                Three
+                            </a>
+                            <div class=" h5 d-none d-lg-block d-xl-block">
+                                Three
+                            </div>
+                            <div class="collapse d-lg-flex" id="three" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-lg-none">
+                    </div>
+
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<div class="jumbotron">
+    <div id="socialMedia">
+        <ul class="list-unstyled d-flex w-100 justify-content-between">
+
+            <li>   <a href="#"><img src="images/Facebook.png"></a>  </li>
+            <li>  <a href="#"><img src="images/Instagram.png"></a></li>
+            <li>   <a href="#"><img src="images/Twitter.png"></a></li>
+
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="test.js"></script>
 </body>
 </html>
