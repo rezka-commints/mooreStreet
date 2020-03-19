@@ -288,20 +288,62 @@ body {
 
 /*END NAVIGATION + HOMEPAGE*/
 
+
+/*FOOTER*/
 footer a {
     text-decoration: none;
     color: grey;
 }
 
+footer {
+    color: darkgrey;
+}
+
+.h5 {
+    color: grey;
+}
+
 footer a:hover {
     text-decoration: none;
-    color: #3293a8;
+    color: #0077C8;
 }
 footer  img {
     margin-right: 15px;
     margin-top: 20px;
 
 }
+
+@media all and (min-width: 992px) {
+    .jumbotron {
+        background: white !important;
+        padding-left: 15%;
+        padding-right: 15%;
+        word-wrap: break-word;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .jumbotron {
+        background: white !important;
+        padding-left: 2%;
+        padding-right: 2%;
+        word-wrap: break-word;
+    }
+}
+
+#socialMedia {
+    float: right;
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#socialMedia li {
+    flex: 1;
+}
+/*FOOTER SOCIAL MEDIA BUTTON*/
+
 
 /*facts start*/
 
@@ -533,3 +575,44 @@ a, a:hover {
 }
 
 /*facts end*/
+
+/*gallery end*/
+
+.galleryPage h2 {
+    text-align: center;
+}
+
+.galleryPage h5, h6 {
+    color: black;
+}
+
+
+.galleryPage div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.galleryPage div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media all and (min-width: 992px) {
+   .galleryPage .jumbotron {
+        background: white;
+        padding-left: 15%;
+        padding-right: 15%;
+        word-wrap: break-word;
+    }
+}
+
+@media all and (max-width: 991px) {
+   .galleryPage .jumbotron {
+        background: white;
+        padding-left: 2%;
+        padding-right: 2%;
+        word-wrap: break-word;
+    }
+}

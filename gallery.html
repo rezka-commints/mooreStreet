@@ -19,73 +19,15 @@
 
     <style>
 
-        @media all and (min-width: 992px) {
-            .container #gallerytext {
-                background: white;
-                padding: 3% 10% 4.5% 10%;
-
-            }
-
-        }
-
-        @media all and (max-width: 991px) {
-            .container #gallerytext {
-                background: white;
-                padding: 3% 8% 1.5% 8%;
-                word-wrap: break-word;
-            }
 
 
-        }
-
-        @media all and (min-width: 992px) {
-            .jumbotron {
-                background: white;
-                padding-left: 15%;
-                padding-right: 15%;
-                word-wrap: break-word;
-            }
-        }
-
-        @media all and (max-width: 991px) {
-            .jumbotron {
-                background: white;
-                padding-left: 2%;
-                padding-right: 2%;
-                word-wrap: break-word;
-            }
-        }
-
-        .container #gallerytext p {
-            color: grey;
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        h5, h6 {
-            color: black;
-        }
 
 
-        div.transbox {
-            margin: 30px;
-            background-color: #ffffff;
-            opacity: 0.7;
-        }
-
-        div.transbox p {
-            margin: 5%;
-            font-weight: bold;
-            color: #000000;
-        }
 
     </style>
 
 </head>
-<body>
+<body class="galleryPage">
 <!--/*START NAVIGATION BAR*/-->
 <nav class="navbar fixed-top navbar-expand-lg  navbar-light">
 
@@ -356,7 +298,7 @@
                                     One
                                 </a>
                             </div>
-                            <div class=" h6 d-none  d-lg-block d-xl-block">
+                            <div class="h5 d-none d-lg-block d-xl-block">
                                 One
                             </div>
                             <div class="collapse d-lg-flex" id="one" data-parent="#accordion">
@@ -371,7 +313,7 @@
                                data-toggle="collapse">
                                 Two
                             </a>
-                            <div class="h6 d-none d-lg-block d-xl-block">
+                            <div class="h5 d-none d-lg-block d-xl-block">
                                 Two
                             </div>
                             <div class="collapse d-lg-flex" id="two" data-parent="#accordion">
@@ -386,7 +328,7 @@
                                data-toggle="collapse">
                                 Three
                             </a>
-                            <div class=" h6 d-none d-lg-block d-xl-block">
+                            <div class=" h5 d-none d-lg-block d-xl-block">
                                 Three
                             </div>
                             <div class="collapse d-lg-flex" id="three" data-parent="#accordion">
@@ -398,21 +340,23 @@
 
                     <hr>
 
-                    <ul class="list-unstyled d-flex w-100 justify-content-between">
-                        <li>
-                            <a href="#"><img src="images/Facebook.png"></a>
-                            <a href="#"><img src="images/Instagram.png"></a>
-                            <a href="#"><img src="images/Twitter.png"></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
 </footer>
+<div class="jumbotron">
+<div id="socialMedia">
+    <ul class="list-unstyled d-flex w-100 justify-content-between">
 
+        <li>   <a href="#"><img src="images/Facebook.png"></a>  </li>
+        <li>  <a href="#"><img src="images/Instagram.png"></a></li>
+        <li>   <a href="#"><img src="images/Twitter.png"></a></li>
 
+    </ul>
+</div>
+</div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
