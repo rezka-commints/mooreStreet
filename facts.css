@@ -7,14 +7,12 @@ body {
     padding-left:0;
 font-family: Tahoma, Geneva, sans-serif;
 }
-
 /*hidden search box in the navigation bar*/
 .hide
 {
     opacity: 0;
     max-height: 0;
 }
-
 #trigger {
     position: absolute;
     left: -999em;
