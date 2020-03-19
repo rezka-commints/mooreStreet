@@ -15,8 +15,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <style>
 
+
+    <style>
+        footer h6{
+            text-decoration: none;
+            color: #3e3f40;
+
+        }
         @media all and (min-width: 992px) {
             .container #gallerytext {
                 background: white;
@@ -67,23 +73,18 @@
             color: black;
         }
 
-        .carousel-caption {
-            position: absolute;
-            right: 15%;
-            bottom: 20px;
-            left: 15%;
-            z-index: 10;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            color: white;
-            text-align: center;
-            background-color: black;
+
+        div.transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            opacity: 0.7;
         }
 
-        .carousel-caption h5 h6 {
-            color: white;
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
         }
-
 
     </style>
 
@@ -136,12 +137,17 @@
     </form>
 </div>
 
-<div class="container">
-    <div id="gallerytext">
-    <h2>Past and Present Gallery</h2>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p>
-    </div>
-    </div>
+<section class="white-wrapper">
+    <div class="section-inner">
+        <div class="container">
+            <div class="row mb60 text-center">
+                <div class="col-sm-12">
+                    <h3 class="section-title">Past and Present Gallery</h3>
+                    <br>
+                    <p class="section-sub-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo du</p>
+                </div>
+            </div>
+        </div>
 
 
 <div class="jumbotron">
@@ -154,15 +160,19 @@
         <div class="carousel-item active">
             <img class="d-block w-100" src="images/barricade.jpg" alt="WRITE PROPER ALT TEXT">
             <div class="carousel-caption d-none d-md-block">
+                <div class="transbox">
                 <h5>Old photo</h5>
                 <h6>Info about old photo</h6>
+                </div>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="images/barricade2.png" alt="WRITE PROPER ALT TEXT">
             <div class="carousel-caption d-none d-md-block">
+                <div class="transbox">
                 <h5>New photo</h5>
                 <h6>Info about new photo</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -189,15 +199,19 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/barricade.jpg" alt="WRITE PROPER ALT TEXT">
                 <div class="carousel-caption d-none d-md-block">
+                    <div class="transbox">
                     <h5>Old photo</h5>
                     <h6>Info about old photo</h6>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="images/barricade2.png" alt="WRITE PROPER ALT TEXT">
                 <div class="carousel-caption d-none d-md-block">
+                    <div class="transbox">
                     <h5>New photo</h5>
                     <h6>Info about new photo</h6>
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,105 +231,175 @@
 <!-- Footer -->
 
 
-<footer class="page-footer font-small mdb-color pt-4">
-<hr>
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
+<!--footer>
+    <hr class="w-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="accordion d-lg-flex w-100" id="accordion">
+                        <div class="col-lg-4 col-md-12">
 
-        <!-- Footer links -->
-        <div class="row text-center text-md-left mt-3 pb-3">
+                            <a href="#one"
+                               class="h6 p-0 d-block d-md-none d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                One
+                            </a>
+                            <div class=" h6 d-none d-md-block d-lg-block d-xl-block">
+                                One
+                            </div>
+                            <div class="collapse d-lg-flex" id="one" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none">
+                        <div class="col-lg-4 col-md-12">
 
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6>
-                <p>Short mission statement could potentially go here.</p>
-            </div>
-            <!-- Grid column -->
+                            <a href="#two"
+                               class="h6 p-0 d-block d-md-none d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                Two
+                            </a>
+                            <div class="h6 d-none d-md-block d-lg-block d-xl-block">
+                                Two
+                            </div>
+                            <div class="collapse d-lg-flex" id="two" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none">
+                        <div class="col-lg-4 col-md-12">
 
-            <hr class="w-100 clearfix d-md-none">
+                            <a href="#three"
+                               class="h6 p-0 d-block d-md-none d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                Three
+                            </a>
+                            <div class=" h6 d-none d-md-block d-lg-block d-xl-block">
+                                Three
+                            </div>
+                            <div class="collapse d-lg-flex" id="three" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none">
+                    </div>
 
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p>
-                    <a href="#!">MDBootstrap</a>
-                </p>
-                <p>
-                    <a href="#!">MDWordPress</a>
-                </p>
 
-            </div>
-            <!-- Grid column -->
-
-
-
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p>Dublin, Ireland</p>
-                <p>info@gmail.com</p>
-                <p> + 01 234 567 88</p>
-                <p>+ 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Footer links -->
-
-        <hr>
-
-        <!-- Grid row -->
-        <div class="row d-flex align-items-center">
-
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8">
-
-                <!--Copyright-->
-                <p class="text-center text-md-left">© 2020 Copyright:
-                    <strong> Interactive Digital Media Class of 2020</strong>
-                </p>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0">
-
-                <!-- Social buttons -->
-
-                <div class="text-center text-md-right">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://www.youtube.com/results?search_query=moore+street+dublin" class="fa fa-youtube"></a>
-                            <!--Create a Youtube playlist with videos on 1916 Moore Street -->
+                    <hr>
+                    <ul class="list-unstyled d-flex w-100 justify-content-between">
+                        <li>
+                            <a href="#" class=" p-0"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class=" p-0"><i class="fa fa-youtube"></i></a>
+                            <a href="#" class="p-0"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li class="list-inline-item">
-                            <a href="https://twitter.com/search?q=%23moorestreet&src=typeahead_click" class="fa fa-twitter"></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.instagram.com/explore/tags/moorestreet/?hl=en" class="fa fa-instagram"></a>
-                        </li>
-
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+
+</footer-->
+
+        <footer class="page-footer font-small mdb-color pt-4">
+            <hr>
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left" data-toggle="collapse">
+
+                <!-- Footer links -->
+                <div class="row text-center text-md-left mt-3 pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6>
+                        <p>Short mission statement could potentially go here.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p>
+                            <a href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a href="#!">MDWordPress</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p>Dublin, Ireland</p>
+                        <p>info@gmail.com</p>
+                        <p> + 01 234 567 88</p>
+                        <p>+ 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Footer links -->
+
+                <hr>
+
+                <!-- Grid row -->
+                <div class="row d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+
+                        <!--Copyright-->
+                        <p class="text-center text-md-left">© 2020 Copyright:
+                            <strong> Interactive Digital Media Class of 2020</strong>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                        <!-- Social buttons -->
+
+
+
+
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="fa fa-facebook"></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="fa fa-twitter"></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="fa fa-instagram"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
 
             </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-</footer>
-<!-- Footer -->
-<!-- Optional JavaScript -->
+            <!-- Footer Links -->
 
 
+            <hr>
+        </footer>
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
