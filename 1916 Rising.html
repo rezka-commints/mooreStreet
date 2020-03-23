@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>1916 Rising</title>
+    <title>Moore Street, 1916 Rising</title>
     <link rel="stylesheet"
           type="text/css"
           href="desktop.css">
-    <!--    <link rel="stylesheet"-->
-    <!--          type="text/css"-->
-    <!--          href="homeCSS.css">-->
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,54 +17,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        .row,.card-body,.col-sm-6{
-            margin:0;
-            padding: 0;
-        }
-        .container-fluid{
-            margin-top:10%;
-        }
-        @media all and (max-width: 1920px) and (min-width: 1061px)  {
-            p{
-                margin-left:10%;
-                margin-top:45%;
-                font-size: large;
-            }
-        }
 
-        @media all and (max-width: 1060px) and (min-width: 700px) {
-
-            p{
-                margin-left:10%;
-                margin-top:38%;
-                font-size:1.5vw;
-            }
-        }
-        @media all and (max-width: 699px) and (min-width: 576px) {
-
-            p{
-                margin-left:10%;
-                margin-top:23%;
-                font-size:1.5vw;
-            }
-        }
-        @media (max-width: 576px) {
-            /* CSS goes here */
-            p{
-                text-align: center;
-                margin-top:10%;
-                font-size:1.5vw ;
-            }
-            img{
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-            }
-        }
-    </style>
 </head>
 
-<body class="1916risingPage">
+<body id="1916-Rising">
 <!--/*START NAVIGATION BAR*/-->
 <nav class="navbar fixed-top navbar-expand-lg  navbar-light">
 
@@ -80,10 +34,10 @@
 
         <ul class="navbar-nav mx-auto" >
             <li class="nav-item  px-3 ml-1" >
-                <a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i> Home <span style="visibility: hidden"> "  "</span></a>
+                <a class="nav-link " href="home.html"><i class="fa fa-fw fa-home"></i> Home <span style="visibility: hidden"> "  "</span></a>
             </li>
             <li class="nav-item  px-3 ml-1" >
-                <a class="nav-link " href="1916%20Rising.html"> <i class="fa fa-fw fa-file"></i> 1916 Rising <span style="visibility: hidden"> "  "</span></a>
+                <a class="nav-link active " href="1916%20Rising.html"> <i class="fa fa-fw fa-file"></i> 1916 Rising <span style="visibility: hidden"> "  "</span></a>
             </li>
             <li class="nav-item px-3 ml-1" >
                 <a class="nav-link" href="gallery.html"><i class="fa fa-fw fa-camera"></i> Past and Present Gallery <span style="visibility: hidden"> "  "</span></a>
@@ -101,8 +55,21 @@
 
 </nav>
 
+<div class="search-form-wrapper">
+    <form class="search-form" id="" action="">
+        <div class="input-group">
+            <input type="text" name="search" class="search form-control" placeholder="Search">
+            <span class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+         </span>
+            <span class=" btn btn-primary search-close" ><i class="fa fa-window-close" aria-hidden="true"></i>
+         </span>
+        </div>
+    </form>
+</div>
+<!--/*END NAVIGATION BAR*/-->
+
 <!-- body contents -->
-<div class="container-fluid">
+<div  class="container-fluid margin1916">
     <div class="card" style="background-color:#f0f0f5;max-width: 70%;margin: auto" >
         <div class="card-body rounded">
             <div class="row">
@@ -239,5 +206,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <script src="test.js"></script>
+
 </body>
 </html>
