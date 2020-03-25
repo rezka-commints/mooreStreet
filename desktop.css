@@ -338,7 +338,31 @@ body {
 
  /* START GALLERY PAGE */
 
+/*all mobile devices*/
+@media all and (min-width: 320px) and (max-width: 767px){
+    #galleryPage p{
+        font-size: 16px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    #galleryPage h2{
+        font-size: 25px;
+        margin-top:10%;
+        margin-bottom:5%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+}
+
+
 @media all and (min-width: 768px) and (max-width: 991px){
+    #galleryCarousel{
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
     #galleryPage p{
         font-size: 16px;
         padding-right: 5%;
@@ -351,17 +375,27 @@ body {
         padding-right: 5%;
         padding-left: 5%;
     }
+
+
     /*the padding in the body sets the content below the fixed navigation bar*/
-    body {
+   body {
         padding-top: 56px;
     }
     /*the margin sets the wrapper below the fixed navigation bar when collapsed*/
-    .search-form-wrapper {
+        .search-form-wrapper {
         margin-top: 198px ;
     }
 }
+
 /*large desktop screens*/
+
 @media all and (min-width: 992px) and (max-width: 1340px){
+
+    #galleryCarousel{
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
     #galleryPage p{
         font-size: 16px;
 
@@ -379,7 +413,13 @@ body {
     }
 }
 @media all and (min-width: 1340px) {
-    #homepage p{
+
+    #galleryCarousel{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    #galleryPage p{
         font-size: 16px;
     }
     #galleryPage h2{
@@ -432,6 +472,7 @@ body {
 }
 */
 
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     outline: #0077C8;
@@ -463,6 +504,49 @@ body {
     transition: opacity 0.6s ease;
 }
 
+
+
+/*gallery end*/
+/*
+.galleryPage h2 {
+    text-align: center;
+}
+
+.galleryPage h5, h6 {
+    color: black;
+}
+
+
+.galleryPage div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.galleryPage div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media all and (min-width: 992px) {
+    .galleryPage .jumbotron {
+        background: white;
+        padding-left: 15%;
+        padding-right: 15%;
+        word-wrap: break-word;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .galleryPage .jumbotron {
+        background: white;
+        padding-left: 2%;
+        padding-right: 2%;
+        word-wrap: break-word;
+    }
+}
+
  /*END GALLERY PAGE */
 
 /*FOOTER*/
@@ -487,6 +571,12 @@ footer  img {
     margin-right: 15px;
     margin-top: 20px;
 
+}
+
+footer {
+    text-align: left;
+    /*padding-left: 15px; */
+    padding-right: 15px;
 }
 
 @media all and (min-width: 992px) {
@@ -517,6 +607,7 @@ footer  img {
 
 #socialMedia li {
     flex: 1;
+    margin-right: 8px;
 }
 /*FOOTER SOCIAL MEDIA BUTTON*/
 
@@ -752,43 +843,3 @@ a, a:hover {
 
 /*facts end*/
 
-/*gallery end*/
-
-.galleryPage h2 {
-    text-align: center;
-}
-
-.galleryPage h5, h6 {
-    color: black;
-}
-
-
-.galleryPage div.transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    opacity: 0.7;
-}
-
-.galleryPage div.transbox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-}
-
-@media all and (min-width: 992px) {
-   .galleryPage .jumbotron {
-        background: white;
-        padding-left: 15%;
-        padding-right: 15%;
-        word-wrap: break-word;
-    }
-}
-
-@media all and (max-width: 991px) {
-   .galleryPage .jumbotron {
-        background: white;
-        padding-left: 2%;
-        padding-right: 2%;
-        word-wrap: break-word;
-    }
-}

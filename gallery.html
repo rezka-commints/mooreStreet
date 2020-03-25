@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GalleryTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gallery</title>
     <link rel="stylesheet"
           type="text/css"
           href="desktop.css">
@@ -48,8 +49,6 @@
             <a href="#search" class="search-form-tigger btn "  data-toggle="search-form"><i class="fa fa-search" aria-hidden="true"></i></a>
         </div>
     </div>
-
-
 </nav>
 <div class="search-form-wrapper">
     <form class="search-form" id="" action="">
@@ -70,9 +69,13 @@
         <div class="container">
             <div class="row mb60 text-center">
                 <div class="col-sm-12">
-                    <h2>Past and Present Gallery</h2>
+                    <h3 class="section-title">Past and Present Gallery</h3>
                     <br>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo du</p>
+                    <br>
+                    <p class="section-sub-title">They say a picture reveals more than a thousand words. <br>
+                        Moore Street has changed a lot throughout the years. More precisely, it has changed a lot after the 1916 Rising.
+                        <br>
+                        Learn about Moore Street visually and see for yourself how much this oftentimes neglected street in central Dublin has changed.</p>
                 </div>
             </div>
         </div>
@@ -80,7 +83,8 @@
 </section>
 
 
-<div class="jumbotron">
+<div id="galleryCarousel">
+    <div class="jumbotron">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -241,7 +245,7 @@
         </a>
     </div>
 </div>
-
+</div>
 <!-- Footer -->
 
 
@@ -257,14 +261,16 @@
                                 <a href="#one"
                                    class="h6 p-0 d-block d-lg-none d-xl-none"
                                    data-toggle="collapse">
-                                    One
+                                    About us
                                 </a>
                             </div>
                             <div class="h5 d-none d-lg-block d-xl-block">
-                                One
+                                About us
                             </div>
                             <div class="collapse d-lg-flex" id="one" data-parent="#accordion">
-                                Lorem Ipsum Blablabla.
+                                We are a group of students at Trinity College Dublin.
+                                Creating this website was a project for a module of our
+                                Master's course Interactive Digital Media.
                             </div>
                         </div>
                         <hr class="w-100 clearfix d-lg-none">
@@ -273,13 +279,13 @@
                             <a href="#two"
                                class="h6 p-0 d-block d-lg-none d-xl-none"
                                data-toggle="collapse">
-                                Two
+                                Our objective
                             </a>
                             <div class="h5 d-none d-lg-block d-xl-block">
-                                Two
+                                Our objective
                             </div>
                             <div class="collapse d-lg-flex" id="two" data-parent="#accordion">
-                                Lorem Ipsum Blablabla.
+                                This website serves to inform about Moore Street in a historic context, focusing on the 1916 Rising.
                             </div>
                         </div>
                         <hr class="w-100 clearfix d-lg-none">
@@ -288,13 +294,13 @@
                             <a href="#three"
                                class="h6 p-0 d-block d-lg-none d-xl-none"
                                data-toggle="collapse">
-                                Three
+                                Get involved
                             </a>
                             <div class=" h5 d-none d-lg-block d-xl-block">
-                                Three
+                                Get involved
                             </div>
                             <div class="collapse d-lg-flex" id="three" data-parent="#accordion">
-                                Lorem Ipsum Blablabla.
+                                We realize that Moore Street is often overlooked. Let's change that! Next time you walk past it, why not take a photo of it and post it with the Hashtag #MooreStreet?
                             </div>
                         </div>
                         <hr class="w-100 clearfix d-lg-none">
@@ -308,13 +314,14 @@
     </div>
 
 </footer>
+
 <div class="jumbotron">
 <div id="socialMedia">
     <ul class="list-unstyled d-flex w-100 justify-content-between">
 
-        <li>   <a href="#"><img src="images/Facebook.png"></a>  </li>
-        <li>  <a href="#"><img src="images/Instagram.png"></a></li>
-        <li>   <a href="#"><img src="images/Twitter.png"></a></li>
+        <li>   <a href="https://www.youtube.com/playlist?list=PLRNLpfqpPUAJymlAm2breRc2xFxpNti9I"><img src="images/youtube.jpeg" alt="Youtube icon"></a>  </li>
+        <li>  <a href="https://www.instagram.com/explore/tags/moorestreet/?hl=en"><img src="images/Instagram.png" alt="Instagram icon"></a></li>
+        <li>   <a href="https://twitter.com/search?q=%23moorestreet&src=typed_query"><img src="images/Twitter.png" alt="Twitter icon"></a></li>
 
     </ul>
 </div>

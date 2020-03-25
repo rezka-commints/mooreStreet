@@ -18,46 +18,51 @@
 
 
 </head>
-<body>
+<body id="galleryPage">
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light  ">
+<!--/*START NAVIGATION BAR*/-->
+<nav class="navbar fixed-top navbar-expand-lg  navbar-light">
 
-    <!--    <div class = "container">-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand " href="#"><span class="logo1">MOORE </span><span class="logo2">STREET</span> </a>
+    <a class="navbar-brand" href="home.html"><span class="logo1">MOORE </span><span class="logo2">STREET</span> </a>
+
+    <div class="navbar-collapse collapse w-100 justify-content-center" id="navbarSupportedContent">
 
 
-
-    <div class="navbar-collapse collapse w-100 justify-content-center " id="navbarSupportedContent">
-
-        <ul class="navbar-nav mx-auto " >
-            <!--            <li class="nav-item  px-2 ml-1" >-->
-            <!--                <a class="nav-link active " href="#">Home<span class="sr-only ">(current)</span></a>-->
-            <!--            </li>-->
-            <li class="nav-item  px-2 ml-1" >
-                <a class="nav-link " href="#">1916 Rising <span class="sr-only ">(current)</span></a>
+        <ul class="navbar-nav mx-auto" >
+            <li class="nav-item  px-3 ml-1" >
+                <a class="nav-link " href="home.html"><i class="fa fa-fw fa-home"></i> Home <span style="visibility: hidden"> "  "</span></a>
             </li>
-            <li class="nav-item px-2 ml-1" >
-                <a class="nav-link" href="#"><span class="underline-space">Past and Present Gallery</span></a>
+            <li class="nav-item  px-3 ml-1" >
+                <a class="nav-link " href="1916%20Rising.html"> <i class="fa fa-fw fa-file"></i> 1916 Rising <span style="visibility: hidden"> "  "</span></a>
+            </li>
+            <li class="nav-item px-3 ml-1" >
+                <a class="nav-link active" href="#"><i class="fa fa-fw fa-camera"></i> Past and Present Gallery <span style="visibility: hidden"> "  "</span></a>
             </li>
 
-            <li class="nav-item px-2 ml-1" >
-                <a class="nav-link" href="#">Related Facts</a>
+            <li class="nav-item px-3 ml-1" >
+                <a class="nav-link" href="facts.html"><i class="fa fa-fw fa-file"></i> Related Facts<span style="visibility: hidden"> "  "</span> </a>
             </li>
         </ul>
-
         <div class="hidden-xs navbar-form navbar-right">
             <a href="#search" class="search-form-tigger btn "  data-toggle="search-form"><i class="fa fa-search" aria-hidden="true"></i></a>
         </div>
-
     </div>
-
-    <!--    </div>-->
-
 </nav>
-
+<div class="search-form-wrapper">
+    <form class="search-form" id="" action="">
+        <div class="input-group">
+            <input type="text" name="search" class="search form-control" placeholder="Search">
+            <span class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
+         </span>
+            <span class=" btn btn-primary search-close" ><i class="fa fa-window-close" aria-hidden="true"></i>
+         </span>
+        </div>
+    </form>
+</div>
+<!--/*END NAVIGATION BAR*/-->
 
 <section class="white-wrapper">
     <div class="section-inner">
@@ -66,120 +71,255 @@
                 <div class="col-sm-12">
                     <h3 class="section-title">Past and Present Gallery</h3>
                     <br>
-                    <p class="section-sub-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo du</p>
+                    <br>
+                    <p class="section-sub-title">Learn about Moore Street visually and find out how much the street has changed from the time of the 1916 Uprising to today.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<div id="galleryCarousel">
+<div class="jumbotron">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/1.jpg" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
 
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer font-small mdb-color pt-4">
-    <hr>
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left" data-toggle="collapse">
-
-        <!-- Footer links -->
-        <div class="row text-center text-md-left mt-3 pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6>
-                <p>Short mission statement could potentially go here.</p>
-            </div>
-            <!-- Grid column -->
-
-            <hr class="w-100 clearfix d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p>
-                    <a href="#!">MDBootstrap</a>
-                </p>
-                <p>
-                    <a href="#!">MDWordPress</a>
-                </p>
-
-            </div>
-            <!-- Grid column -->
-
-
-
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p>Dublin, Ireland</p>
-                <p>info@gmail.com</p>
-                <p> + 01 234 567 88</p>
-                <p>+ 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Footer links -->
-
-        <hr>
-
-        <!-- Grid row -->
-        <div class="row d-flex align-items-center">
-
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8">
-
-                <!--Copyright-->
-                <p class="text-center text-md-left">© 2020 Copyright:
-                    <strong> Interactive Digital Media Class of 2020</strong>
-                </p>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0">
-
-                <!-- Social buttons -->
-
-
-
-
-                <div class="text-center text-md-right">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <a href="#" class="fa fa-facebook"></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="fa fa-twitter"></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="fa fa-instagram"></a>
-                        </li>
-
-                    </ul>
                 </div>
-
             </div>
-            <!-- Grid column -->
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/new1.JPG" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
 
+                </div>
+            </div>
         </div>
-        <!-- Grid row -->
 
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <!-- Footer Links -->
+</div>
 
 
-    <hr>
+<div class="jumbotron">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/2.jpg" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/new2.JPG" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<div class="jumbotron">
+    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/3.jpg" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/new3.JPG" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/4.jpg" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/new4.JPG" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel3" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/5.png" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/new5.JPG" alt="WRITE PROPER ALT TEXT">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#myCarousel3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+</div>
+
+
+<footer>
+    <hr class="w-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="accordion d-lg-flex w-100" id="accordion">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="footerLinks">
+                                <a href="#one"
+                                   class="h6 p-0 d-block d-lg-none d-xl-none"
+                                   data-toggle="collapse">
+                                    About us
+                                </a>
+                            </div>
+                            <div class="h5 d-none d-lg-block d-xl-block">
+                                About us
+                            </div>
+                            <div class="collapse d-lg-flex" id="one" data-parent="#accordion">
+                                We are a group of students at Trinity College Dublin.
+                                Creating this website was a project for a module of our
+                                Master's course Interactive Digital Media.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-lg-none">
+                        <div class="col-lg-4 col-md-12">
+
+                            <a href="#two"
+                               class="h6 p-0 d-block d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                Mission Statement
+                            </a>
+                            <div class="h5 d-none d-lg-block d-xl-block">
+                                Mission Statement
+                            </div>
+                            <div class="collapse d-lg-flex" id="two" data-parent="#accordion">
+                                This website serves to inform about Moore Street in a historic context, focusing on the 1916 Uprising.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-lg-none">
+                        <div class="col-lg-4 col-md-12">
+
+                            <a href="#three"
+                               class="h6 p-0 d-block d-lg-none d-xl-none"
+                               data-toggle="collapse">
+                                Three
+                            </a>
+                            <div class=" h5 d-none d-lg-block d-xl-block">
+                                Three
+                            </div>
+                            <div class="collapse d-lg-flex" id="three" data-parent="#accordion">
+                                Lorem Ipsum Blablabla.
+                            </div>
+                        </div>
+                        <hr class="w-100 clearfix d-lg-none">
+                    </div>
+
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </footer>
-<!-- Footer -->
+<div class="jumbotron">
+    <div id="socialMedia">
+        <ul class="list-unstyled d-flex w-100 justify-content-between">
+
+            <li>  <a href="https://www.youtube.com/playlist?list=PLRNLpfqpPUAJymlAm2breRc2xFxpNti9I"><img src="images/Facebook.png" alt="Youtube icon"></a>  </li>
+            <li>  <a href="https://www.instagram.com/explore/tags/moorestreet/?hl=en"><img src="images/Instagram.png" alt="Instagram icon"></a></li>
+            <li>   <a href="https://twitter.com/search?q=%23moorestreet&src=typed_query"><img src="images/Twitter.png" alt="Twitter icon"></a></li>
+
+        </ul>
+    </div>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
