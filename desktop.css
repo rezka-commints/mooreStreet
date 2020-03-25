@@ -290,15 +290,15 @@ body {
 
 
 /*START 1916 RISING PAGE*/
-#1916-Rising  .row,.card-body,.col-sm-6{
-    margin:0;
-    padding: 0;
+.no-margin {
+    margin:0 !important;
+    padding: 0 !important;
 }
-.margin1916{
-    margin-top:10% !important;
+.container-fluid{
+    margin-top:10%;
 }
 @media all and (max-width: 1920px) and (min-width: 1061px)  {
-    #1916-Rising p{
+    #Rising p{
         margin-left:10%;
         margin-top:45%;
         font-size: large;
@@ -307,7 +307,7 @@ body {
 
 @media all and (max-width: 1060px) and (min-width: 700px) {
 
-    #1916-Rising  p{
+    #Rising    p{
         margin-left:10%;
         margin-top:38%;
         font-size:1.5vw;
@@ -315,7 +315,7 @@ body {
 }
 @media all and (max-width: 699px) and (min-width: 576px) {
 
-    #1916-Rising p{
+    #Rising    p{
         margin-left:10%;
         margin-top:23%;
         font-size:1.5vw;
@@ -323,12 +323,12 @@ body {
 }
 @media (max-width: 576px) {
     /* CSS goes here */
-    #1916-Rising  p{
+    #Rising   p{
         text-align: center;
         margin-top:10%;
         font-size:1.5vw ;
     }
-    #1916-Rising img{
+    #Rising   img{
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
