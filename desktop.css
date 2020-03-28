@@ -9,6 +9,8 @@ body {
 }
 
 
+
+
 /*hidden search box in the navigation bar*/
 .hide
 {
@@ -300,11 +302,18 @@ body {
 .container-fluid{
     margin-top:10%;
 }
+
+#Rising h2 {
+    font-size: 25px;
+}
+
 @media all and (max-width: 1920px) and (min-width: 1061px)  {
     #Rising p{
         margin-left:10%;
-        margin-top:45%;
-        font-size: large;
+        margin-top:20%;
+       /* margin-bottom:5%; */
+        font-size: 16px;
+        text-align: left;
     }
 }
 
@@ -312,29 +321,35 @@ body {
 
     #Rising    p{
         margin-left:10%;
-        margin-top:38%;
-        font-size:1.5vw;
+        margin-top:5%;
+        margin-bottom:5%;
+        font-size:16px;
+        text-align: left;
     }
 }
 @media all and (max-width: 699px) and (min-width: 576px) {
 
     #Rising    p{
         margin-left:10%;
-        margin-top:23%;
-        font-size:1.5vw;
+     /*   margin-top:2.5%; */
+        font-size:16px;
+        text-align: left;
     }
 }
 @media (max-width: 576px) {
     /* CSS goes here */
     #Rising   p{
         text-align: center;
-        margin-top:10%;
-        font-size:1.5vw ;
+        margin-top:3%;
+        font-size:16px;
+        text-align: left;
     }
     #Rising   img{
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
+
+
 }
 /*END 1916 RISING PAGE*/
 
@@ -352,8 +367,8 @@ body {
         font-size: 16px;
         color: black;
         padding-right: 5%;
-        padding-left: 5%;
-    }
+    padding-left: 5%;
+}
 
     #galleryPage h2{
         font-size: 25px;
@@ -362,6 +377,14 @@ body {
         padding-right: 5%;
         padding-left: 5%;
     }
+
+    #galleryCarousel img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+
 
 }
 
@@ -389,6 +412,12 @@ body {
         margin-bottom:5%;
         padding-right: 5%;
         padding-left: 5%;
+    }
+
+    #galleryCarousel img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
     }
 
 
@@ -428,6 +457,13 @@ body {
         padding-right: 10%;
         padding-left: 10%;
     }
+
+    #galleryCarousel img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+    }
+
     body {
         padding-top: 171.4px;
     }
@@ -450,6 +486,12 @@ body {
     }
     #galleryPage h2{
         font-size: 25px;
+    }
+
+    #galleryCarousel img {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
     }
     body {
         padding-top: 194.6px;
@@ -532,7 +574,16 @@ body {
 
 
 
-/*gallery end*/
+/*GALLERY ENDS*/
+
+.facts h2  {
+    font-size: 25px;
+
+}
+
+.facts p {
+    font-size: 16px;
+}
 /*
 .galleryPage h2 {
     text-align: center;
@@ -602,8 +653,11 @@ footer  img {
 footer {
     text-align: left;
     /*padding-left: 15px; */
-    padding-right: 15px;
+    /* margin-right: 25px; */
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
 
 @media all and (min-width: 992px) {
     .jumbotron {
@@ -612,6 +666,21 @@ footer {
         padding-right: 15%;
         word-wrap: break-word;
     }
+
+    #socialMedia {
+        float: right;
+        margin-right: 3%;
+        width: 15%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    #socialMedia li {
+        flex: 1;
+        margin-right: 8px;
+    }
+
 }
 
 @media all and (max-width: 991px) {
@@ -621,20 +690,26 @@ footer {
         padding-right: 2%;
         word-wrap: break-word;
     }
+
+    #socialMedia {
+        float: right;
+        margin-right: 2.5%;
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    #socialMedia li {
+        flex: 1;
+        margin-right: 8px;
+    }
+
 }
 
-#socialMedia {
-    float: right;
-    width: 15%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
 
-#socialMedia li {
-    flex: 1;
-    margin-right: 8px;
-}
+
+
 /*FOOTER SOCIAL MEDIA BUTTON*/
 
 
