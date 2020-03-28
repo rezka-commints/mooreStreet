@@ -17,3 +17,4 @@ $( document ).ready(function() {
         $('html').removeClass('search-form-open');
     });
 });
+

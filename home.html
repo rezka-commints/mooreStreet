@@ -25,7 +25,9 @@
 
 <body id="home">
 <!--/*START NAVIGATION BAR*/-->
-<nav class="navbar fixed-top navbar-expand-lg  navbar-light">
+
+<nav  class="navbar fixed-top  navbar-expand-lg  navbar-light" role="navigation">
+
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,17 +52,23 @@
                 <a class="nav-link" href="facts.html"><i class="fa fa-fw fa-file"></i> Related Facts<span style="visibility: hidden"> "  "</span> </a>
             </li>
         </ul>
-        <div class="hidden-xs navbar-form navbar-right">
+        <div class="hidden-xs form-inline navbar-right">
             <a href="#search" class="search-form-tigger btn "  data-toggle="search-form"><i class="fa fa-search" aria-hidden="true"></i></a>
         </div>
+
+
+
     </div>
 
 
+
 </nav>
+<!--<diV id="emptyBox"></diV>-->
+
 <div class="search-form-wrapper">
     <form class="search-form" id="" action="">
         <div class="input-group">
-            <input type="text" name="search" class="search form-control" placeholder="Search">
+            <input type="text" name="search" class="search form-control" placeholder="Search" aria-label="Search">
             <span class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>
          </span>
             <span class=" btn btn-primary search-close" ><i class="fa fa-window-close" aria-hidden="true"></i>
@@ -68,15 +76,18 @@
         </div>
     </form>
 </div>
+
+
 <!--/*END NAVIGATION BAR*/-->
 
-<section id="homepage">
 
+<section id="homepage">
         <div class="row  no-gutters">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+
+            <div class="col-lg-6 col-md-8 col-sm-12">
                 <img src="images/Number16.jpg"  style="max-width: 100%; height: auto;" ></div>
 
-            <div class=" col  d-none d-md-block "  >
+            <div class=" col  d-none d-md-block col-md-2 "  >
 
                     <div class="row d" style="height:25%;">
                     <div class="col  d-none d-md-block " style="background: #0077C8;  border: 1px solid; border-color:#979797;">
@@ -112,8 +123,8 @@
 
 
 
-            <div class="col-lg-4 col-md-4 col-sm-12 align-self-end home-style"    >
-                <h2>Moore Street: The story of the surrender </h2>
+            <div class="col-lg-4 col-md-12 col-sm-12 align-self-end home-style"    >
+                <h2 class="section-title">Moore Street: The story of the surrender </h2>
             <p>Moore Street – located in central Dublin and often overlooked in current times,
                 despite its rich history in the context of the 1916 Rising.
                 But what exactly makes this street so important,
@@ -125,8 +136,9 @@
         </div>
 
 
-
 </section>
+
+
 
 
 
