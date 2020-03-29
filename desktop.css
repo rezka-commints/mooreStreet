@@ -3,13 +3,49 @@ HEAD,
 /*START NAVIGATION AND HOMEPAGE*/
 body {
     margin: 0;
-    /*padding-top: 208px;*/
     padding-left:0;
     font-family: Tahoma, Geneva, sans-serif !important;
 }
 
+/*The image on the homepage*/
+.home-photo{
+    max-width: 100%;
+    height: auto;}
 
 
+.box-blue{
+    background: #0077C8;
+    border: 1px solid;
+    border-color: #979797;
+}
+.box-white{
+    background: #FFFDFD;
+}
+
+.box-orange{
+    background: #EF7C4D;
+    border: 1px solid;
+    border-color:#979797;
+}
+
+.box-white-2{
+    background: #FFFDFD;
+    border: 1px solid;
+    border-color:#979797;
+}
+
+.box-green{
+    background: #44A45F;
+    border: 1px solid;
+    border-color:#979797;
+}
+
+.box{
+    height:25%;
+}
+#homepage{
+    margin-bottom: 100px;
+}
 
 /*hidden search box in the navigation bar*/
 .hide
@@ -44,7 +80,7 @@ body {
     left: 0;
     right: 0;
     padding: 10px 10px;
-    background:  right center no-repeat #42adf5;
+    background:  right center no-repeat #979797;
     z-index: 1031;
 
 }
@@ -102,11 +138,6 @@ body {
         color: rgba(0, 0, 0, 0.9);
 
     }
-
-    /*.navbar-nav > li{*/
-    /*    margin-left:100px;*/
-    /*    margin-right:100px;*/
-    /*}*/
 
     .logo1 {
         padding-top: 50px;
@@ -308,10 +339,12 @@ body {
 @media all and (max-width: 1920px) and (min-width: 1061px)  {
     #Rising p{
         margin-left:10%;
-        margin-top:20%;
+        margin-right: 10%;
+        /*margin-top:20%;*/
        /* margin-bottom:5%; */
         font-size: 16px;
-        text-align: left;
+        /*text-align: left;*/
+        margin-bottom: 10%;
     }
 }
 
@@ -319,10 +352,11 @@ body {
 
     #Rising    p{
         margin-left:10%;
-        margin-top:5%;
+        margin-right: 10%;
+        /*margin-top:5%;*/
         margin-bottom:5%;
         font-size:16px;
-        text-align: left;
+        /*text-align: left;*/
     }
 }
 @media all and (max-width: 699px) and (min-width: 576px) {
@@ -331,16 +365,22 @@ body {
         margin-left:10%;
      /*   margin-top:2.5%; */
         font-size:16px;
-        text-align: left;
+        /*text-align: left;*/
     }
+
+    #Rising img{
+        margin:auto;
+
+    }
+
 }
 @media (max-width: 576px) {
     /* CSS goes here */
     #Rising   p{
         text-align: center;
-        margin-top:3%;
+        /*margin-top:3%;*/
         font-size:16px;
-        text-align: left;
+        /*text-align: left;*/
     }
     #Rising   img{
         border-top-left-radius: 5px;
