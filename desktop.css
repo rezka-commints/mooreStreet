@@ -44,7 +44,6 @@ body {
     left: 0;
     right: 0;
     padding: 10px 10px;
-//  margin-top: 120px;
     background:  right center no-repeat #42adf5;
     z-index: 1031;
 
@@ -129,7 +128,6 @@ body {
     .logo2{
         color:white;
         padding-bottom: 50px;
-    //line-height: 0;
 
 
     }
