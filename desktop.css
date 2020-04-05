@@ -336,15 +336,33 @@ body {
     font-size: 25px;
 }
 
+#Rising .card{
+    background-color:#f0f0f5;
+    max-width: 70%;
+    margin: auto;
+}
+
+#Rising .embed-responsive{
+    max-width: 70%;margin: auto;
+}
+
+#Rising .downloads{
+    text-align: center;
+}
+
 @media all and (max-width: 1920px) and (min-width: 1061px)  {
     #Rising p{
         margin-left:10%;
         margin-right: 10%;
-        /*margin-top:20%;*/
-       /* margin-bottom:5%; */
         font-size: 16px;
-        /*text-align: left;*/
         margin-bottom: 10%;
+    }
+    #Rising .card{
+        border-radius: 5px;
+    }
+    #Rising  img{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 }
 
@@ -353,34 +371,32 @@ body {
     #Rising    p{
         margin-left:10%;
         margin-right: 10%;
-        /*margin-top:5%;*/
         margin-bottom:5%;
-        font-size:16px;
-        /*text-align: left;*/
+        font-size:1.6vw;
+    }
+    #Rising .card{
+        border-radius: 5px;
+    }
+    #Rising  img{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 }
 @media all and (max-width: 699px) and (min-width: 576px) {
 
     #Rising    p{
         margin-left:10%;
-     /*   margin-top:2.5%; */
-        font-size:16px;
-        /*text-align: left;*/
-    }
-
-    #Rising img{
-        margin:auto;
-
+        margin-top:2.5%;
+        font-size:1.6vw;
     }
 
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     /* CSS goes here */
     #Rising   p{
         text-align: center;
-        /*margin-top:3%;*/
+        margin-top:6%;
         font-size:16px;
-        /*text-align: left;*/
     }
     #Rising   img{
         border-top-left-radius: 5px;
