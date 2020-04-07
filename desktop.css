@@ -372,7 +372,7 @@ body {
         margin-left:10%;
         margin-right: 10%;
         margin-bottom:5%;
-        font-size:1.6vw;
+        font-size:16px;
     }
     #Rising .card{
         border-radius: 5px;
@@ -382,13 +382,22 @@ body {
         border-bottom-left-radius: 5px;
     }
 }
-@media all and (max-width: 699px) and (min-width: 576px) {
+@media all and (max-width: 974px) and (min-width: 576px) {
 
     #Rising    p{
-        margin-left:10%;
-        margin-top:2.5%;
-        font-size:1.6vw;
+        text-align: center;
+        margin-top:6%;
+        font-size:16px;
     }
+    #Rising  img{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
 
 }
 @media (max-width: 575px) {
